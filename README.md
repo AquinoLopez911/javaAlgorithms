@@ -1,6 +1,7 @@
 # javaAlgorithms
 I'm challenging myself to complete 100 different algorithms for 100 continuous days.
--- for the first few days i will be solving algorithms from the coding dojo algorithm challenges book 
+-- for the first few days i will be solving algorithms from the coding dojo algorithm challenges book
+
 day 1)
 *implemented a Node class and a LinkedList class
 
