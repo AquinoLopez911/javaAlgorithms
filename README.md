@@ -5,10 +5,13 @@ I'm challenging myself to complete 100 different algorithms for 100 continuous d
 day 1)
 *implemented a Node class and a LinkedList class
 
-Algo1) Remove nodes with duplicate values.Retain only the first instance of each value.(singly linked list) 
+Algo1) 
+
+Remove nodes with duplicate values.Retain only the first instance of each value.(singly linked list) 
   -Time Complexity: O(n^2)
   -could sort list and solve with O(n) Time Complexity
 
 day2)
-algo2)
+
+algo2) Partition
 
