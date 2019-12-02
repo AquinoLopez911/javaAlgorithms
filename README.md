@@ -10,7 +10,7 @@ Remove nodes with duplicate values.Retain only the first instance of each value.
   -Time Complexity: O(n^2)
 
 day2)
-failed at completing the algo of the day.
+failed at completing the algo of the day.(partition Singly Linked List)
 
 day3)
 algo2) isPalindrom
