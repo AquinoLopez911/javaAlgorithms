@@ -5,13 +5,18 @@ I'm challenging myself to complete 100 different algorithms for 100 continuous d
 day 1)
 *implemented a Node class and a LinkedList class
 
-Algo1) 
-
+Algo1) RemoveDuplicates
+**found in LinkedList Class**
 Remove nodes with duplicate values.Retain only the first instance of each value.(singly linked list) 
   -Time Complexity: O(n^2)
   -could sort list and solve with O(n) Time Complexity
 
 day2)
+failed at completing the algo of the day.
 
-algo2) Partition
+day3)
+
+algo2) isPalindrom
+**found in RandomAlgo class**
+checks to see if a inputed word is a palindrom.
 
