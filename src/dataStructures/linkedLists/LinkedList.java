@@ -159,7 +159,8 @@ public class LinkedList {
 	
 	//Day 1
 	/**
-	 *  remove duplicate nodes from unsorted LinkedList 
+	 * remove duplicates: &nbsp
+	 * remove duplicate nodes from unsorted LinkedList 
 	 *  ex. 1-> 2-> 4-> 2-> == 1-> 2-> 4->
 	 *
 	 * @param  null
@@ -170,29 +171,23 @@ public class LinkedList {
 		
 		if(!this.isEmpty()) { 
 			Node current = this.head; 											//keeps track of the node being compared to the Nodes in LinkedList
-			
 			while(current != null) {
 				Node runner = current;											//goes thru the linked list to check for duplicates of the current node
-				
 				while(runner != null && runner.getNext() != null) {
-					
 					if(current.getValue() == runner.getNext().getValue()) {
-						
 						runner.setNext(runner.getNext().getNext()); 			//runner changes next so next time around his next is not a duplicate number 
 					}
 					else 
 						runner = runner.getNext();
-					
 				}
-				
 				current = current.getNext();
 		    }
 			this.findTail();										
 		}
-		
 	}//end removeDuplicates
 	
 	
+
 	
 	
 	
