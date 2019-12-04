@@ -5,7 +5,7 @@ I'm challenging myself to complete 100 different algorithms for 100 continuous d
 day 1)
 *implemented a Node class and a LinkedList class
 Algo1) RemoveDuplicates
-**found in LinkedList Class**
+**found in IntLinkedList Class**
 Remove nodes with duplicate values.Retain only the first instance of each value.(singly linked list) 
   -Time Complexity: O(n^2)
 
