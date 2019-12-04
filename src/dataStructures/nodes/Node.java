@@ -10,12 +10,6 @@ package dataStructures.nodes;
 public class Node {
 	
 	/* Fields */
-	
-	/**
-	 * integer value of the Node
-	 */
-	private int value;
-	
 	/**
 	 * pointer to the next Node
 	 */
@@ -27,19 +21,15 @@ public class Node {
 	/**
 	 * Default Node constructor
 	 *
-	 * @param  value   the value that will be stored in the Node
-	 * @return         null
+	 * @param   
+	 * @return  null
 	 */
-	public Node(int value) {
-		this.value = value;
+	public Node() {
 		this.next = null;
 	}
 
 
 	/* Getters */
-	public int getValue() {
-		return value;
-	}
 
 
 	public Node getNext() {
@@ -47,9 +37,7 @@ public class Node {
 	}
 
 	/* Setters */
-	public void setValue(int value) {
-		this.value = value;
-	}
+	
 
 
 	public void setNext(Node next) {
@@ -60,7 +48,7 @@ public class Node {
 	/* ToString */
 	@Override
 	public String toString() {
-		return String.valueOf(this.value);
+		return "node with no value";
 	}
 	
 	

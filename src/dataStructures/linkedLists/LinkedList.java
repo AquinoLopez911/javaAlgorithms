@@ -5,7 +5,7 @@
  *LinkedList class maintains insertion order.
  */
 package dataStructures.linkedLists;
-import dataStructures.nodes.Node;
+import dataStructures.nodes.*;
 
 public class LinkedList {
 	
@@ -14,17 +14,17 @@ public class LinkedList {
 	/**
 	 * pointer to the first Node
 	 */
-	private Node head;
+	protected Node head;
 	
 	/**
 	 * pointer to the last Node
 	 */
-	private Node tail;
+	protected Node tail;
 	
 	/**
 	 * boolean to see if the LinkedList is empty
 	 */
-	private boolean empty;
+	protected boolean empty;
 	
 	
 	/* CONSTRUCTORS */
@@ -40,17 +40,6 @@ public class LinkedList {
 		this.empty = isEmpty();
 	}
 	
-	/**
-	 * overloaded LinkedList constructor
-	 *
-	 * @param  int value
-	 * @return null
-	 */
-	public LinkedList(int value) {
-		this.head = new Node(value);
-		this.tail = this.head;
-		this.empty = isEmpty();
-	}
 	
 
 	/* GETTERS */
@@ -125,26 +114,6 @@ public class LinkedList {
 	}//end countNodes
 	
 	
-	/**
-	 * adds a node to the end of the LinkedList 
-	 *
-	 * @param  Node node
-	 * @return null
-	 */
-	public void append(int newNodeValue) {
-		Node newNode = new Node(newNodeValue);
-		
-		
-		if(this.isEmpty()) {				//if linkedList is empty, head and tail = newNode
-			this.head = newNode;
-			this.tail = newNode;
-			this.empty = this.isEmpty();
-		}
-		else {								//else tail.next = newNode
-			tail.setNext(newNode);
-			this.setTail(tail.getNext());
-		}
-	}//end append
 	
 	
 	
@@ -157,38 +126,13 @@ public class LinkedList {
 	
 	/* ALGORITHMS */
 	
-	//Day 1
-	/**
-	 * remove duplicates: &nbsp
-	 * remove duplicate nodes from unsorted LinkedList 
-	 *  ex. 1-> 2-> 4-> 2-> == 1-> 2-> 4->
-	 *
-	 * @param  null
-	 * @return null
-	 */
-	public void removeDuplicates() {
-		
-		
-		if(!this.isEmpty()) { 
-			Node current = this.head; 											//keeps track of the node being compared to the Nodes in LinkedList
-			while(current != null) {
-				Node runner = current;											//goes thru the linked list to check for duplicates of the current node
-				while(runner != null && runner.getNext() != null) {
-					if(current.getValue() == runner.getNext().getValue()) {
-						runner.setNext(runner.getNext().getNext()); 			//runner changes next so next time around his next is not a duplicate number 
-					}
-					else 
-						runner = runner.getNext();
-				}
-				current = current.getNext();
-		    }
-			this.findTail();										
-		}
-	}//end removeDuplicates
+	
+	
+	
+	
 	
 	
 
-	
 	
 	
 	
@@ -199,18 +143,19 @@ public class LinkedList {
 		
 		StringBuffer buff = new StringBuffer("nodes in list are:");
 		
-		Node runner = this.head;
-		while(runner != null) {
-			 buff.append(String.valueOf(runner.getValue()));
-			 if(runner.getNext() != null){
-               buff.append("-> ");
-	         }
-	         runner = runner.getNext();
-	    }
-		
-		System.out.println(buff.toString());
-        System.out.println("LinkedList head: " + this.head);
-        System.out.println("LinkedList tail: " + this.tail);
+		//this should be in child classes
+//		Node runner = this.head;
+//		while(runner != null) {
+//			 buff.append(String.valueOf(runner.getValue()));
+//			 if(runner.getNext() != null){
+//               buff.append("-> ");
+//	         }
+//	         runner = (IntNode) runner.getNext();
+//	    }
+//		
+//		System.out.println(buff.toString());
+//      System.out.println("LinkedList head: " + this.head);
+//      System.out.println("LinkedList tail: " + this.tail);
 		return buff.toString();
 	}//end toString
 	
