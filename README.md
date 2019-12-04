@@ -16,7 +16,7 @@ day3)
 algo2) isPalindrom
 **found in StringAlgo class**
 checks to see if a inputed word is a palindrom.
-
+-Time Complexity: O(n/2)
 
 day4)
 Made Node class a parent class to IntNode and StringNode classes.
@@ -24,4 +24,5 @@ Made LinkedList class a parent class to IntLinkedList and StringLinkedList class
 algo(3) balancedParentheses
 **found in StringAlgo class**
 check to see if the input String has closing (,{,[ for every ),},]
+-Time Complexity: O(n)
 
