@@ -26,3 +26,9 @@ algo(3) balancedParentheses
 check to see if the input String has closing (,{,[ for every ),},]
 -Time Complexity: O(n)
 
+day5)
+algo(4) bubbleSort(linkedList not array)
+**found in IntLinkedList class**
+sorts numbers in linked list from greatest to least
+-Time Complexity: O(n^2)
+
