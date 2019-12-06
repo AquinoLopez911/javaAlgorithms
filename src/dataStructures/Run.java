@@ -21,11 +21,22 @@ public class Run {
 	
 	// day 1
 
-//	((IntLinkedList) ll).append(3);//3
-//	((IntLinkedList) ll).append(4);//4
-//	((IntLinkedList) ll).append(3);
-//	((IntLinkedList) ll).append(7);//7
-//	((IntLinkedList) ll).append(6);//6
+	((IntLinkedList) ll).append(3);//3
+	((IntLinkedList) ll).append(4);//4
+	((IntLinkedList) ll).append(2);
+	((IntLinkedList) ll).append(7);//7
+	((IntLinkedList) ll).append(6);//6
+	((IntLinkedList) ll).append(1);//6
+	ll.toString();
+	((IntLinkedList) ll).bubbleSort();
+	System.out.println("****************************************************");
+	ll.toString();
+	
+	
+	
+	
+	
+	
 //	((IntLinkedList) ll).append(6);
 //	((IntLinkedList) ll).append(9);//9
 //	((IntLinkedList) ll).append(4);
@@ -61,7 +72,7 @@ public class Run {
 	
 	//day 4
 	
-	System.out.println(StringAlgos.balencedParentheses("({[]}())"));
+//	System.out.println(StringAlgos.balencedParentheses("({[]}())"));
 //	System.out.println(StringAlgos.balencedParentheses("()"));
 	
 	

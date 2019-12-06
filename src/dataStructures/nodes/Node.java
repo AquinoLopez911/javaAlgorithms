@@ -13,7 +13,7 @@ public class Node {
 	/**
 	 * pointer to the next Node
 	 */
-	private Node next;
+	protected Node next;
 	
 	
 	/* Constructors */

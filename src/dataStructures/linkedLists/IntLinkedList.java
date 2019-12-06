@@ -6,6 +6,7 @@
  */
 package dataStructures.linkedLists;
 import dataStructures.nodes.IntNode;
+import dataStructures.nodes.Node;
 
 public class IntLinkedList extends LinkedList {
 	
@@ -129,6 +130,47 @@ public class IntLinkedList extends LinkedList {
 			this.findTail();										
 		}
 	}//end removeDuplicates
+	
+	
+	//Day 5
+	/**
+	*  swap: &nbsp
+	*  swaps two adjacent nodes 
+	*
+	* @param  node1		first node
+	* @param  node2		second node
+	* @return null 
+	*/
+	public void swap(IntNode node1, IntNode node2 ) {
+		
+	}
+	
+	/**
+	*  bubbleSort: &nbsp
+	*  basic bubble sort with linkedList
+	*
+	* @param  null
+	* @return null 
+	*/
+	public void bubbleSort() {
+		
+		
+		for(int i = 0; i < this.countNodes()- 1; i++) {
+			IntNode runner = (IntNode) this.head;
+			while((IntNode) runner != (IntNode) this.tail) {
+				
+				if(runner.getValue() > ((IntNode) runner.getNext()).getValue()) {
+					int temp = runner.getValue();
+					
+					runner.setValue(((IntNode) runner.getNext()).getValue());
+					
+					((IntNode) runner.getNext()).setValue(temp);
+					
+				}
+				runner = (IntNode) runner.getNext();
+			}
+		}
+	}
 	
 	
 	
