@@ -173,6 +173,41 @@ public class IntLinkedList extends LinkedList {
 	}
 	
 	
+	/**
+	*  shiftList: &nbsp
+	*  shifts nodes to the right by a given number
+	*
+	* @param  shifts: the number of shifts wanted 
+	* @return  null
+	*/
+	public IntLinkedList shiftList(int num) {
+		
+		int n = num % this.countNodes();
+		
+		if(n == 0) {
+			return this;
+		}
+		else {
+			IntNode runner = this.getHead();
+			while(n > 0) {
+				runner = (IntNode) runner.getNext();
+				n -= 1;
+				IntNode runner2 = this.getHead();
+				while(runner.getNext() != null) {
+					runner = (IntNode) runner.getNext();
+					runner2 = (IntNode) runner2.getNext();
+				}
+				runner.setNext(this.getHead());
+				this.setHead(runner2.getNext());
+				runner2.setNext(null);
+			}
+		}
+		this.findTail();
+		return this;
+		
+	}
+	
+	
 	
 	
 	
